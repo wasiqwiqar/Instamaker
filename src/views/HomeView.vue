@@ -4,7 +4,7 @@
         <GeneratedImage />
         <v-card>
             <template #title>
-                <h1 class="text-xl font-bold" :style="`color: ${GeneralStore.styles.bgColor};`">Configuration</h1>
+                <h1>Configuration</h1>
             </template>
             <div class="flex justify-between">
                 <!-- Background -->

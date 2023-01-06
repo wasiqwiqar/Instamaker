@@ -1,7 +1,7 @@
 <template>
     <v-card>
         <template #title>
-            <h1 class="text-xl font-bold mb-2" :style="`color: ${GeneralStore.styles.bgColor};`">Result</h1>
+            <h1>Result</h1>
         </template>
 
         <div class="slide p-5 pr-9 flex flex-col justify-center" ref="toDownload" :style="computedSlide">
