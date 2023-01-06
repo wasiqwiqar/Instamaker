@@ -19,10 +19,9 @@
                 </div>
                 <!-- Show Next -->
                 <div class="flex flex-col p-1">
-                    <label class="w-full">Next</label>
+                    <label class="w-full">Next Icon</label>
                     <label for="showNext" class="customCheckbox">
-                        <input id="showNext" name="showNext" type="checkbox" v-model="GeneralStore.styles.showNext">
-                        <span class="checkmark"></span>
+                        <toggle-button class="my-2" v-model="GeneralStore.styles.showNext" />
                     </label>
                 </div>
             </div>
@@ -67,6 +66,7 @@
 
 <script setup>
 import GeneratedImage from '../components/GeneratedImage.vue'
+import ToggleButton from '../components/ToggleButton.vue'
 import { useGeneralStore } from '../stores/general'
 const GeneralStore = useGeneralStore()
 
