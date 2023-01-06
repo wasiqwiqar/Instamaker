@@ -19,7 +19,7 @@
 
         <button class="font-bold my-3 py-2 px-4 rounded hover:brightness-110 float-right"
             :style="`background: ${GeneralStore.styles.bgColor}; color: ${GeneralStore.styles.textColor}`"
-            @click.left="GeneralStore.downloadImage(toDownload)">Download</button>
+            @click.left="GeneralStore.downloadImage(toDownload)">Save</button>
     </v-card>
 </template>
 
