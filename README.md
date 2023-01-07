@@ -22,6 +22,7 @@ Because I follow the exact same workflow when making Instagram posts for an acco
 | Persist settings on exit | 🟢 |
 | Making multiple "slides" in bulk | 🔴 |
 | ChatGPT integration | 🔴 |
+| Save drafts / keep history of past work | 🔴 |
 
 ## Installation
 

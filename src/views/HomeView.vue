@@ -1,5 +1,5 @@
 <template>
-    <page-title title="quick quick quick" />
+    <page-title title="page titles will be useful some day" />
     <div class="flex justify-center">
         <GeneratedImage />
         <v-card>
