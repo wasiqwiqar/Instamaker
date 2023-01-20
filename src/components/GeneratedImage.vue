@@ -4,8 +4,8 @@
             <h1>Result</h1>
         </template>
 
-        <div class="slide p-5 pr-9 flex flex-col justify-center" ref="toDownload" :style="computedSlide">
-            <p class="">{{ GeneralStore.text }}</p>
+        <div :class="slideClasses" ref="toDownload" :style="computedSlide">
+            <p :class="textClasses">{{ GeneralStore.text }}</p>
             <div class="footerText" style="`color: ${GeneralStore.styles.textColor}">
                 {{ GeneralStore.footerText }}
             </div>
@@ -17,9 +17,10 @@
             </div>
         </div>
 
-        <button class="font-bold my-3 py-2 px-4 rounded hover:brightness-110 float-right"
-            :style="`background: ${GeneralStore.styles.bgColor}; color: ${GeneralStore.styles.textColor}`"
-            @click.left="GeneralStore.downloadImage(toDownload)">Save</button>
+        <button class="font-bold my-3 py-2 px-4 rounded hover:brightness-110 float-right" :style="`
+        background: ${GeneralStore.styles.bgColor};
+        color: ${GeneralStore.styles.textColor};
+        `" @click.left="GeneralStore.downloadImage(toDownload)">Save</button>
     </v-card>
 </template>
 
@@ -60,7 +61,16 @@ import { useGeneralStore } from '../stores/general'
 const GeneralStore = useGeneralStore()
 const toDownload = ref(null)
 
+const slideClasses = computed(() => {
+    let classes = 'slide p-5 flex flex-col justify-center'
+    classes += ` ${GeneralStore.styles.showNext ? ' pr-16' : ''}`
+    return classes
+})
 
+const textClasses = computed(() => {
+    let classes = `text-${GeneralStore.styles.textAlignment}`
+    return classes
+})
 
 const computedSlide = computed(() => {
     let styles = GeneralStore.styles;

@@ -52,6 +52,35 @@
                 </div>
             </div>
             <div class="flex flex-col p-1">
+                <label class="w-full">Text Alignment</label>
+                <div class="flex">
+                    <div class="flex grow justify-center p-1 border transition-all"
+                    @click="GeneralStore.styles.textAlignment = 'left'"
+                    role="button"
+                    :style="`${GeneralStore.styles.textAlignment == 'left' ? `border-color: ${GeneralStore.styles.bgColor}; color: ${GeneralStore.styles.bgColor}` : ''}`">
+                        <span class="material-icons">
+                            format_align_left
+                        </span>
+                    </div>
+                    <div class="flex grow justify-center p-1 border transition-all"
+                    @click="GeneralStore.styles.textAlignment = 'center'"
+                    role="button"
+                    :style="`${GeneralStore.styles.textAlignment == 'center' ? `border-color: ${GeneralStore.styles.bgColor}; color: ${GeneralStore.styles.bgColor}` : ''}`">
+                        <span class="material-icons">
+                            format_align_center
+                        </span>
+                    </div>
+                    <div class="flex grow justify-center p-1 border transition-all"
+                    @click="GeneralStore.styles.textAlignment = 'right'"
+                    role="button"
+                    :style="`${GeneralStore.styles.textAlignment == 'right' ? `border-color: ${GeneralStore.styles.bgColor}; color: ${GeneralStore.styles.bgColor}` : ''}`">
+                        <span class="material-icons">
+                            format_align_right
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col p-1">
                 <label class="w-full">Text</label>
                 <textarea class="my-2  p-2 border rounded" cols="30" rows="10" v-model="GeneralStore.text"></textarea>
             </div>

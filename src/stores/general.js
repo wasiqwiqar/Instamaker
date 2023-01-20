@@ -10,6 +10,7 @@ export const useGeneralStore = defineStore('general', () => {
         fontSize: 72,
         fontWeight: "800",
         textColor: '#ffffff',
+        textAlignment: 'left',
         bgColor: '#FF7575',
         lineHeight: 1,
         showNext: true,

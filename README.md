@@ -13,8 +13,8 @@ Because I follow the exact same workflow when making Instagram posts for an acco
 | Put text on canvas | 🟢 |
 | Modify background & font colours | 🟢 |
 | Modify font size | 🟢 |
-| Modify font | 🟡 |
-| Modify text alignment | 🟡 |
+| Modify font | 🔴 |
+| Modify text alignment | 🟢 |
 | Add background image | 🟡 |
 | Overlay on background image | 🟡 |
 | Save image | 🟢 |
@@ -23,6 +23,7 @@ Because I follow the exact same workflow when making Instagram posts for an acco
 | Making multiple "slides" in bulk | 🔴 |
 | ChatGPT integration | 🔴 |
 | Save drafts / keep history of past work | 🔴 |
+| Ubuntu / Mac OS builds | 🔴 |
 
 ## Installation
 
