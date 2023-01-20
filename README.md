@@ -15,6 +15,7 @@ Because I follow the exact same workflow when making Instagram posts for an acco
 | Modify font size | 🟢 |
 | Modify font | 🔴 |
 | Modify text alignment | 🟢 |
+| Vertical alignment | 🟡 |
 | Add background image | 🟡 |
 | Overlay on background image | 🟡 |
 | Save image | 🟢 |
